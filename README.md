@@ -94,8 +94,3 @@ Contribuições são bem-vindas! Siga estas etapas para contribuir:
 ### 📜 Licença
 Este projeto está licenciado sob a MIT License.
 
-
-
-
-
-
