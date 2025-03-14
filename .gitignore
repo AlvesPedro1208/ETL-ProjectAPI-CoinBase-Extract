@@ -1,0 +1,30 @@
+# Arquivos do Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.log
+
+# Ambientes Virtuais
+venv/
+.venv/
+.env
+*.env
+
+# Configuração do Editor
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Arquivos do Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Logs e Arquivos Temporários
+logs/
+*.log
+tmp/
+*.temp
+
+# Kafka
+kafka-logs/
