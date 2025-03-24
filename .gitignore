@@ -9,7 +9,7 @@ __pycache__/
 *.pyc
 
 # Checkpoints e metadados do Spark
-data/checkpoints/
+checkpoints/
 data/commits/
 data/offsets/
 data/sources/
