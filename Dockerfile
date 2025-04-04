@@ -1,4 +1,4 @@
-FROM bitnami/spark:3.5.0
+FROM bitnami/spark:3.4.1
 
 USER root
 
@@ -12,5 +12,7 @@ COPY ./src /opt/bitnami/spark-apps/
 
 ENV PYSPARK_PYTHON=python3
 
-CMD ["spark-submit", "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0", "/opt/bitnami/spark-apps/main.py"]
+RUN python3 -m pip install --no-cache-dir python-dotenv
+
+CMD ["spark-submit", "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.1", "/opt/bitnami/spark-apps/main.py"]
 # CMD [ "tail", "-f", "/dev/null" ]

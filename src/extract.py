@@ -3,9 +3,13 @@ import json
 from kafka import KafkaProducer
 from time import sleep
 import logging
+from dotenv import load_dotenv
+import os
 
-KAFKA_TOPIC = "crypto_prices"
-KAFKA_SERVER = "host.docker.internal:9093"
+load_dotenv()
+
+KAFKA_SERVER = os.getenv("KAFKA_SERVER")
+KAFKA_TOPIC = os.getenv("KAFKA_TOPIC")
 COINBASE_URL = "https://api.exchange.coinbase.com/products/{}/ticker"
 COINS = ["BTC-USD", "ETH-USD", "SOL-USD"]  
 

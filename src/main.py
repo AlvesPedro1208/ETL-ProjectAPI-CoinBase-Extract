@@ -1,5 +1,4 @@
 from extract import get_crypto_prices
-from transform import transform_crypto_prices
 import threading
 
 if __name__ == '__main__':

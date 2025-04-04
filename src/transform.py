@@ -22,6 +22,7 @@ def transform_crypto_prices():
         .option("kafka.bootstrap.servers", "kafka:9092") \
         .option("subscribe", "crypto_prices") \
         .option("startingOffsets", "latest") \
+        .option("failOnDataLoss", "false") \
         .load()
 
     df_json = df_raw.selectExpr("CAST(value AS STRING) as json")
